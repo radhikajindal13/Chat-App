@@ -6,7 +6,7 @@ const AddUser = ({ name, email, imageSrc, userId, addUser }) => {
       <div className="flex items-center space-x-4 p-2">
         <div className="flex-shrink-0">
           {imageSrc && (
-            <img className="w-10 h-10 rounded-full" src={imageSrc} alt={`${name} image`} />
+            <img className="w-10 h-10 rounded-full" src={imageSrc} alt="" />
           )}
         </div>
         <div className="flex-1 min-w-0">

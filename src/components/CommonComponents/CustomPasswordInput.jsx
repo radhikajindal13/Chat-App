@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, {useState} from 'react';
 import { BiSolidHide, BiShow } from 'react-icons/bi';
 
 export default function CustomPasswordInput ({ label, value, onChange, name, placeholder, required })  {
