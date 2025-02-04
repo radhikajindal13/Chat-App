@@ -31,9 +31,9 @@ export default function Notification() {
         className="bg-primary-800 text-white p-2 rounded-full hover:bg-primary-700 focus:outline-none"
         onClick={handleProfileClick}
       >
-        <span class="relative inline-block">
+        <span className="relative inline-block">
           <BiSolidBell className="w-6 h-6" />
-          {notficationsMessages.length > 0 && (<span class="absolute top-0 right-0 inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-red-100 transform translate-x-1/2 -translate-y-1/2 bg-red-600 rounded-full">{notficationsMessages.length}</span>)}
+          {notficationsMessages.length > 0 && (<span className="absolute top-0 right-0 inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-red-100 transform translate-x-1/2 -translate-y-1/2 bg-red-600 rounded-full">{notficationsMessages.length}</span>)}
 
         </span>
       </button>
@@ -50,8 +50,8 @@ export default function Notification() {
           {
             notficationsMessages?.map((item) => (
               <div className=" shadow-2xl mb-3 m-2 border-r border-b border-l border-gray-400 rounded-lg p-2">
-                <span class="text-sm font-bold">{item.sender.name} </span>  <span class="text-xs"> - {new Date(item.createdAt).toLocaleTimeString()}</span>
-                <h4 class="text-xs font-medium text-gray-900 truncate">{item.message}</h4>
+                <span className="text-sm font-bold">{item.sender.name} </span>  <span className="text-xs"> - {new Date(item.createdAt).toLocaleTimeString()}</span>
+                <h4 className="text-xs font-medium text-gray-900 truncate">{item.message}</h4>
               </div>
             ))
           }
